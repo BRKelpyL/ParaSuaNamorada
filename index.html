@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceita :D</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Quer Casar Comigo?</h1>
+
+        <div class="button-div">
+            <img src="./assets/AQUI.png" id="aqui">
+            <button id="nao" onclick="mudar_local_botao()">Não</button>
+            <button id="sim"><a href="./aceitou.html">Sim</a></button>
+        </div>
+    </div>
+
+    <script>
+        let botao_nao = document.getElementById("nao")
+        let img_aqui = document.getElementById("aqui")
+
+        let min = 8
+        let max = 92
+
+        const mudar_local_botao = () => {
+            botao_nao.style.position = "absolute"
+            img_aqui.style.display = "block"
+
+            console.log(botao_nao.style.right = gerar_random())
+            console.log(botao_nao.style.top = gerar_random())
+        }
+
+        const gerar_random = () => {
+            return String(Math.floor(Math.random() * (max - min) + min) + "%")
+        }
+    </script>
+</body>
+</html>
