@@ -10,7 +10,7 @@ body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background-image: url("/assets/casamento-background.jpg");
+    background-image: url("./assets/casamento-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
